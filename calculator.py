@@ -16,3 +16,5 @@ elif (oper == '*'):
     print('Result is equal to :' + str(num1 * num2))
 elif (oper == '/'):
     print('Result is equal to :' + str(num1 / num2))
+elif (oper == '%'):
+    print('Result is equal to :' + str(num1 % num2))

@@ -1,25 +1,21 @@
-print('This is basic calculator with basic operations')
-print('1. Enter the first number')
-print('2. Enter the second number')
-print('3. Enter the operator')
+print('This is a basic calculator')
+print('Enter the first number')
+print('Enter the second number')
+print('Enter the operator')
+
+def operations(operator):
+    switcher = {
+        '+': num1 + num2,
+        '-': num1 - num2,
+        '*': num1 * num2,
+        '/': num1 / num2,
+        '%': num1 % num2
+    }
+    return switcher.get(operator, "Invalid operator")
 
 num1 = int(input("First number: "))
 num2 = int(input("Second number: "))
+oper = input("Enter operator: ")
+result = operations(oper)
+print("Result is equal to " + str(result))
 
-oper = input('Enter operator: ')
-
-if (oper == '+'):
-    print('Result is equal to :' + str(num1 + num2))
-elif (oper == '-'):
-    print('Result is equal to :' + str(num1 - num2))
-elif (oper == '*'):
-    print('Result is equal to :' + str(num1 * num2))
-elif (oper == '/'):
-    print('Result is equal to :' + str(num1 / num2))
-elif (oper == '%'):
-    print('Result is equal to :' + str(num1 % num2))
-elif (oper == '<'):
-    if (num1 < num2):
-        print(str(num1) + ' less than ' + str(num2) + ' is true.')
-    else:
-        print(str(num1) + ' less than ' + str(num2) + ' is false.')

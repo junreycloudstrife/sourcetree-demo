@@ -18,3 +18,8 @@ elif (oper == '/'):
     print('Result is equal to :' + str(num1 / num2))
 elif (oper == '%'):
     print('Result is equal to :' + str(num1 % num2))
+elif (oper == '<'):
+    if (num1 < num2):
+        print(str(num1) + ' less than ' + str(num2) + ' is true.')
+    else:
+        print(str(num1) + ' less than ' + str(num2) + ' is false.')
